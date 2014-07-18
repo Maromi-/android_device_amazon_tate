@@ -185,13 +185,13 @@ service camera_dcc /vendor/bin/camera_dcc
     oneshot
 
 # create filesystems if necessary
-service setup_fs /system/bin/setup_fs \
-    /dev/block/platform/omap/omap_hsmmc.1/by-name/cache \
-    /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata
-    class core
-    user root
-    group root
-    oneshot
+#service setup_fs /system/bin/setup_fs \
+#    /dev/block/platform/omap/omap_hsmmc.1/by-name/cache \
+#    /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata
+#    class core
+#    user root
+#    group root
+#    oneshot
 
 # bugreport is triggered by holding down volume down, volume up and home
 service bugreport /system/bin/bugmailer.sh -v
