@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
 
 # Device settings
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=213 \
+    ro.sf.lcd_density=160 \
     persist.hwc.mirroring.region=0:0:800:1280 \
     persist.hwc.mirroring.transform=3 \
     persist.demo.hdmirotationlock=true \
